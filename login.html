@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2d5cafece0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>EZPLAN/Log In</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="pantalla-carga">
+        <div class="loader"></div>
+    </div>
+    
+    <header>
+        <div class="logo">
+            <a href="home.html"> <img src="EZPLAN_logo.png" alt="Logo de EZPLAN"> </a>
+        </div>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="evento.html">Crear Evento</a>
+            <a href="votaciones.html">Votaciones</a>
+            <a href="resultados.html">Resultados</a>
+            <button type="button" onclick="location.href='login.html'">LOG IN</button>
+        </div>
+    </header>
+
+    <main>
+        <h1><b>LOG IN</b></h1>
+        <section class="login-section animate__animated animate__backInDown">
+            <div class="login-container">
+                <div class="login-form">
+                    <h2 class="h2IS">Iniciar Sesión</h2>
+                    <form>
+                        <h3><b>Usuario<i style="color: red;">*</i></b></h3>
+                        <div class="input-container">
+                            <input type="email" class="input" id="email" name="email" required/>
+                        </div>
+
+                        <h3><b>Contraseña<i style="color: red;">*</i></b></h3>
+                        <div class="input-container">
+                            <input type="password" class="input" id="password" name="password" required/>
+                        </div>
+
+                        <div class="button-container">
+                            <button type="submit" formaction="home.html"><b>Iniciar Sesión</b></button>
+                            <br>
+                            <a href="#!">¿Olvidaste tu contraseña?</a>
+                        </div>
+
+                        <div class="signup-link">
+                            <h5>¿No tienes cuenta? <a href="registrar.html" style="color: #66B2FF;"><u>Registrate</u></a></h5> 
+                        </div>
+                    </form>
+                </div>
+
+                <div class="calendar-image">
+                    <img src="calendario-morado.jpg" alt="logo">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© Pablo Escalante © 2024 - EzPlan</p>
+        
+        <div class="social">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="README.md"><i class="fa-solid fa-circle-info"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

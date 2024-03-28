@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2d5cafece0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="evento.css">
+    <title>EZPLAN/Crear Evento</title>
+</head>
+
+<body>
+
+    <div class="pantalla-carga">
+        <div class="loader"></div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="home.html"> <img src="EZPLAN_logo.png" alt="Logo de EZPLAN"> </a>
+        </div>
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="evento.html">Crear Evento</a>
+            <a href="votaciones.html">Votaciones</a>
+            <a href="resultados.html">Resultados</a>
+            <button type="button" onclick="location.href='login.html'">LOG IN</button>
+        </div>
+    </header>
+
+    <main>
+        <h1>Crear Evento</h1>
+        <section class="evento-section animate__animated animate__backInDown">
+            <div class="evento-container">
+                <div class="evento-form">
+                    <h3 class="h3DT">Datos</h3>
+                    <form action="#">
+                        <div class="datos">
+                            <div class="grupo">
+                                <label for="titulo">Título<i style="color: red;">*</i></label>
+                                <input type="text" id="titulo" name="titulo" required>
+                            </div>
+                            <div class="grupo">
+                                <label for="descripcion">Descripción<i style="color: red;">*</i></label>
+                                <textarea id="descripcion" name="descripcion" required></textarea>
+                            </div>
+                            <div class="grupo">
+                                <label for="fecha">Fecha<i style="color: red;">*</i></label>
+                                <input type="date" id="fecha" name="fecha" required>
+                            </div>
+                        </div>
+                        <div class="compartir">
+                            <div class="grupo">
+                                <label for="compartir">Compartir</label>
+                                <div class="compartir-grupo">
+                                    <input type="email" id="email" name="email" placeholder="Ingresar email">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                </div>
+                            </div>
+                            <div class="grupo">
+                                <label for="enlace">Enlace</label>
+                                <div class="enlace-grupo">
+                                    <div id="enlace" class="enlace-text">https://enlace_compartir_pablo_elias</div>
+                                    <i class="fa-regular fa-copy"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="crear-button" formaction="votaciones.html">Crear</button>
+                    </form>
+                </div>
+                <div class="lista-conteiner">
+                    <h3 class="h3DT">Lista Invitados</h3>
+                    <div class="lista-invitados">
+                        <div>
+                            <ul>
+                                <li>Invitado 1</li>
+                                <li>Invitado 2</li>
+                                <li>Invitado 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <footer>
+        <p>© Pablo Escalante © 2024 - EzPlan</p>
+        <div class="social">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="README.md"><i class="fa-solid fa-circle-info"></i></a>
+        </div>
+    </footer>
+    
+</body>
+</html>

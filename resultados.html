@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EZPLAN/Resultados</title>
+    <script src="https://kit.fontawesome.com/2d5cafece0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="resultados.css">
+</head>
+<body>
+    
+    <div class="pantalla-carga">
+        <div class="loader"></div>
+    </div>
+    
+    <header>
+        <div class="logo">
+            <a href="home.html"> <img src="EZPLAN_logo.png" alt="Logo de EZPLAN"> </a>
+        </div>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="evento.html">Crear Evento</a>
+            <a href="votaciones.html">Votaciones</a>
+            <a href="resultados.html">Resultados</a>
+            <button type="button" onclick="location.href='login.html'">LOG IN</button>
+        </div>
+    </header>
+
+    <main>
+        <h1>Resultados</h1>
+        <section class="resultado-section">
+            <div class="fila-resultados">
+                <div class="resultado">
+                    <div class="contenido-resultado">
+                        <h3>Evento 1</h3>
+                        <div class="fecha-votos">Fecha ganadora: <span id="fecha1">DD/MM/YYYY</span></div>
+                        <div class="fecha-votos">N. votos: <span id="votos1">3</span></div>
+                        <button onclick="agendarEvento(1)">Agendar</button>
+                        <img src="globos.png" alt="Imagen Superpuesta">
+                    </div>
+                </div>
+                <div class="resultado">
+                    <div class="contenido-resultado">
+                        <h3>Evento 2</h3>
+                        <div class="fecha-votos">Fecha ganadora: <span id="fecha2">DD/MM/YYYY</span></div>
+                        <div class="fecha-votos">N. votos: <span id="votos1">6</span></div>
+                        <button onclick="agendarEvento(2)">Agendar</button>
+                        <img src="globos.png" alt="Imagen Superpuesta">
+                    </div>
+                </div>
+                <div class="resultado">
+                    <div class="contenido-resultado">
+                        <h3>Evento 3</h3>
+                        <div class="fecha-votos">Fecha ganadora: <span id="fecha3">DD/MM/YYYY</span></div>
+                        <div class="fecha-votos">N. votos: <span id="votos1">4</span></div>
+                        <button onclick="agendarEvento(3)">Agendar</button>
+                        <img src="globos.png" alt="Imagen Superpuesta">
+                    </div>
+                </div>
+                <div class="resultado">
+                    <div class="contenido-resultado">
+                        <h3>Evento 4</h3>
+                        <div class="fecha-votos">Fecha ganadora: <span id="fecha4">DD/MM/YYYY</span></div>
+                        <div class="fecha-votos">N. votos: <span id="votos1">5</span></div>
+                        <button onclick="agendarEvento(4)">Agendar</button>
+                        <img src="globos.png" alt="Imagen Superpuesta">
+                    </div>
+                </div>
+                <div class="resultado">
+                    <div class="contenido-resultado">
+                        <h3>Evento 5</h3>
+                        <div class="fecha-votos">Fecha ganadora: <span id="fecha5">DD/MM/YYYY</span></div>
+                        <div class="fecha-votos">N. votos: <span id="votos1">3</span></div>
+                        <button onclick="agendarEvento(5)">Agendar</button>
+                        <img src="globos.png" alt="Imagen Superpuesta">
+                    </div>
+                </div>
+                <div class="resultado">
+                    <div class="contenido-resultado">
+                        <h3>Evento 6</h3>
+                        <div class="fecha-votos">Fecha ganadora: <span id="fecha6">DD/MM/YYYY</span></div>
+                        <div class="fecha-votos">N. votos: <span id="votos1">4</span></div>
+                        <button onclick="agendarEvento(6)">Agendar</button>
+                        <img src="globos.png" alt="Imagen Superpuesta">
+                    </div>
+                </div>
+                <div class="resultado">
+                    <div class="contenido-resultado">
+                        <h3>Evento 7</h3>
+                        <div class="fecha-votos">Fecha ganadora: <span id="fecha7">DD/MM/YYYY</span></div>
+                        <div class="fecha-votos">N. votos: <span id="votos1">5</span></div>
+                        <button onclick="agendarEvento(7)">Agendar</button>
+                        <img src="globos.png" alt="Imagen Superpuesta">
+                    </div>
+                </div>
+                <div class="resultado">
+                    <div class="contenido-resultado">
+                        <h3>Evento 8</h3>
+                        <div class="fecha-votos">Fecha ganadora: <span id="fecha8">DD/MM/YYYY</span></div>
+                        <div class="fecha-votos">N. votos: <span id="votos1">5</span></div>
+                        <button onclick="agendarEvento(8)">Agendar</button>
+                        <img src="globos.png" alt="Imagen Superpuesta">
+                    </div>
+                </div>
+                <div class="resultado">
+                    <div class="contenido-resultado">
+                        <h3>Evento 9</h3>
+                        <div class="fecha-votos">Fecha ganadora: <span id="fecha9">DD/MM/YYYY</span></div>
+                        <div class="fecha-votos">N. votos: <span id="votos1">3</span></div>
+                        <button onclick="agendarEvento(9)">Agendar</button>
+                        <img src="globos.png" alt="Imagen Superpuesta">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© Pablo Escalante © 2024 - EzPlan</p>
+        <div class="social">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="README.md"><i class="fa-solid fa-circle-info"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function agendarEvento(evento) {
+            alert("¡Evento " + evento + " agendado!");
+        }
+    </script>
+
+</body>
+</html>

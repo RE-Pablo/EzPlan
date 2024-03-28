@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EZPLAN/Votaciones</title>
+    <script src="https://kit.fontawesome.com/2d5cafece0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="votaciones.css">
+</head>
+<body>
+    
+    <div class="pantalla-carga">
+        <div class="loader"></div>
+    </div>
+    
+    <header>
+        <div class="logo">
+            <a href="home.html"> <img src="EZPLAN_logo.png" alt="Logo de EZPLAN"> </a>
+        </div>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="evento.html">Crear Evento</a>
+            <a href="votaciones.html">Votaciones</a>
+            <a href="resultados.html">Resultados</a>
+            <button type="button" onclick="location.href='login.html'">LOG IN</button>
+        </div>
+    </header>
+
+    <main>
+        <h1>Votaciones</h1>
+        <section class="eventos">
+            <div class="evento">
+                <h3>Evento 1</h3>
+                <div class="opciones">
+                    <div>
+                        <input type="radio" name="evento1" id="fecha1-1" value="fecha1-1">
+                        <label for="fecha1-1">Fecha 1:</label>
+                        <p>DD/MM/YYYY</p>
+                        <span class="marcador">10 votos</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="evento1" id="fecha1-2" value="fecha1-2">
+                        <label for="fecha1-2">Fecha 2:</label>
+                        <p>DD/MM/YYYY</p>
+                        <span class="marcador">10 votos</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="evento1" id="fecha1-3" value="fecha1-3">
+                        <label for="fecha1-3">Fecha 3:</label>
+                        <p>DD/MM/YYYY</p>
+                        <span class="marcador">10 votos</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="evento1" id="fecha1-4" value="fecha1-4">
+                        <label for="fecha1-4">Fecha 4:</label>
+                        <p>DD/MM/YYYY</p>
+                        <span class="marcador">10 votos</span>
+                    </div>
+                </div>
+                <button onclick="mostrarAlerta('Evento 1', obtenerFechaSeleccionada('evento1'))">VOTAR</button>
+        </div>
+            </div>
+            <div class="evento">
+                <h3>Evento 2</h3>
+                <div class="opciones">
+                    <div>
+                        <input type="radio" name="evento2" id="fecha2-1" value="fecha2-1">
+                        <label for="fecha2-1">Fecha 1:</label>
+                        <p>DD/MM/YYYY</p>
+                        <span class="marcador">10 votos</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="evento2" id="fecha1-2" value="fecha2-2">
+                        <label for="fecha2-2">Fecha 2:</label>
+                        <p>DD/MM/YYYY</p>
+                        <span class="marcador">10 votos</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="evento2" id="fecha2-3" value="fecha2-3">
+                        <label for="fecha2-3">Fecha 3:</label>
+                        <p>DD/MM/YYYY</p>
+                        <span class="marcador">10 votos</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="evento2" id="fecha2-4" value="fecha2-4">
+                        <label for="fecha2-4">Fecha 4:</label>
+                        <p>DD/MM/YYYY</p>
+                        <span class="marcador">10 votos</span>
+                    </div>
+                </div>
+                <button onclick="mostrarAlerta('Evento 2', obtenerFechaSeleccionada('evento2'))">VOTAR</button>
+            </div>
+            <div class="evento">
+                <h3>Evento 3</h3>
+                <div class="opciones">
+                    <div>
+                        <input type="radio" name="evento3" id="fecha3-1" value="fecha3-1">
+                        <label for="fecha3-1">Fecha 1:</label>
+                        <p>DD/MM/YYYY</p>
+                        <span class="marcador">10 votos</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="evento3" id="fecha3-2" value="fecha3-2">
+                        <label for="fecha3-2">Fecha 2:</label>
+                        <p>DD/MM/YYYY</p>
+                        <span class="marcador">10 votos</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="evento3" id="fecha3-3" value="fecha3-3">
+                        <label for="fecha3-3">Fecha 3:</label>
+                        <p>DD/MM/YYYY</p>
+                        <span class="marcador">10 votos</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="evento3" id="fecha3-4" value="fecha3-4">
+                        <label for="fecha3-4">Fecha 4:</label>
+                        <p>DD/MM/YYYY</p>
+                        <span class="marcador">10 votos</span>
+                    </div>
+                </div>
+                <button onclick="mostrarAlerta('Evento 3', obtenerFechaSeleccionada('evento3'))">VOTAR</button>
+            </div>
+            <div class="evento">
+                <h3>Evento 4</h3>
+                <div class="opciones">
+                    <div>
+                        <input type="radio" name="evento4" id="fecha4-1" value="fecha4-1">
+                        <label for="fecha4-1">Fecha 1:</label>
+                        <p>DD/MM/YYYY</p>
+                        <span class="marcador">10 votos</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="evento4" id="fecha4-2" value="fecha4-2">
+                        <label for="fecha4-2">Fecha 2:</label>
+                        <p>DD/MM/YYYY</p>
+                        <span class="marcador">10 votos</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="evento4" id="fecha4-3" value="fecha4-3">
+                        <label for="fecha4-3">Fecha 3:</label>
+                        <p>DD/MM/YYYY</p>
+                        <span class="marcador">10 votos</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="evento4" id="fecha4-4" value="fecha4-4">
+                        <label for="fecha4-4">Fecha 4:</label>
+                        <p>DD/MM/YYYY</p>
+                        <span class="marcador">10 votos</span>
+                    </div>
+                </div>
+                <button onclick="mostrarAlerta('Evento 4', obtenerFechaSeleccionada('evento4'))">VOTAR</button>
+            </div>
+            <div class="evento">
+                <h3>Evento 5</h3>
+                <div class="opciones">
+                    <div>
+                        <input type="radio" name="evento5" id="fecha5-1" value="fecha5-1">
+                        <label for="fecha5-1">Fecha 1:</label>
+                        <p>DD/MM/YYYY</p>
+                        <span class="marcador">10 votos</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="evento5" id="fecha5-2" value="fecha5-2">
+                        <label for="fecha5-2">Fecha 2:</label>
+                        <p>DD/MM/YYYY</p>
+                        <span class="marcador">10 votos</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="evento5" id="fecha5-3" value="fecha5-3">
+                        <label for="fecha5-3">Fecha 3:</label>
+                        <p>DD/MM/YYYY</p>
+                        <span class="marcador">10 votos</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="evento5" id="fecha5-4" value="fecha5-4">
+                        <label for="fecha5-4">Fecha 4:</label>
+                        <p>DD/MM/YYYY</p>
+                        <span class="marcador">10 votos</span>
+                    </div>
+                </div>
+                <button onclick="mostrarAlerta('Evento 5', obtenerFechaSeleccionada('evento5'))">VOTAR</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© Pablo Escalante © 2024 - EzPlan</p>
+        <div class="social">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="README.md"><i class="fa-solid fa-circle-info"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function obtenerFechaSeleccionada(nombreEvento) {
+            var radios = document.getElementsByName(nombreEvento);
+            for (var i = 0; i < radios.length; i++) {
+                if (radios[i].checked) {
+                    return radios[i].value;
+                }
+            }
+            return null;
+        }
+
+        function mostrarAlerta(evento, fecha) {
+            if (fecha) {
+                alert("" + evento + " agendado con fecha: " + fecha);
+            } else {
+                alert("Por favor, selecciona una fecha para el evento " + evento);
+            }
+        }
+    </script>
+</body>
+</html>
