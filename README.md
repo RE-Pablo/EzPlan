@@ -35,7 +35,9 @@ start chrome home.html
 start firefox home.html
 ```
 ## Instrucciones pagina web
-Ver página principal: [EZPLAN](https://re-pablo.github.io/EzPlan/)
+Ver página principal: [EZPLAN](home.html)
+
+Ver README: [README](https://re-pablo.github.io/EzPlan/)
 
 ## Características principales
 
