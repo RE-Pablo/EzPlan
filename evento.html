@@ -67,6 +67,11 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="grupo ubicacion">
+                            <label for="ubicacion">Ubicación<i style="color: red;">*</i></label>
+                            <div id="map"></div>
+                            <input id="ubicacion" name="ubicacion" required placeholder="Copia y pega la dirección aquí">
+                        </div> 
                         <button type="submit" class="crear-button" formaction="votaciones.html">Crear</button>
                     </form>
                 </div>
@@ -95,6 +100,10 @@
             <a href="https://re-pablo.github.io/EzPlan/"><i class="fa-solid fa-circle-info"></i></a>
         </div>
     </footer>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBMuXv2Lrnm911rAhTGJzH1og7udgw4Ok&callback=initMap"></script>
+
+    <script src="home.js"></script>
     
 </body>
 </html>
